@@ -23,6 +23,7 @@ This browser calculator project is a part of [The Odin Project](https://www.theo
 This project is the final project of the foundations section in [The Odin Project](https://www.theodinproject.com/dashboard)'s [curriculum](https://www.theodinproject.com/lessons/foundations-calculator). Throughout this foundational phase we've covered the basics of web development and I've gained a strong grasp of the fundamental concepts. There is plenty more to explore and learn, but I'm able to create quite a bit at this point. I'm pretty comfortable working and building with HTML, Vanilla JavaScript and CSS and I'm looking forward to learning more, delving deeper into the more advanced topics and building more intricate and bigger projects.
 ## Credits
 - The function getDisplayNumber is implemented following this [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)'s [tutorial](https://www.youtube.com/watch?v=j59qQ7YWLxw). The getDisplayNumber function takes a numeric value as its argument and returns a formatted string that represents the number in a user-friendly display format with proper thousand separators contributing to an improved user experience and more understandable numerical representation.
+- The [CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/) used in the project is created by [Joshua Comeau](https://www.joshwcomeau.com/).
 ## Author
 - [GitHub](https://github.com/Haminimi)
 - Email: haminimi.dev@gmail.com
