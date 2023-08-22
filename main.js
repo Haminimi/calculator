@@ -107,3 +107,26 @@ for(const operationButton of operationButtons) {
         }
     });
 }
+
+
+resultButton.addEventListener('click', () => {
+    if (firstNumber !== '' && operator !== '' && currentNumber !== '') {
+        secondNumber = currentNumber;
+        const resultValue = operate();
+        if (resultValue !== undefined) {
+            currentNumber = `${Number(resultValue.toFixed(10))}`;
+            previousDisplay.textContent = `${getDisplayNumber(firstNumber)} ${operator} ${getDisplayNumber(secondNumber)} =`
+            firstNumber = '';
+            updateCurrentDisplay();
+        } else {
+            console.error('Invalid operation');
+        }
+    } else if (firstNumber === '' && operator !== '' && currentNumber !== '') {
+        firstNumber = currentNumber;
+        const resultValue = operate();
+        currentNumber = `${Number(resultValue.toFixed(10))}`;
+        previousDisplay.textContent = `${getDisplayNumber(firstNumber)} ${operator} ${getDisplayNumber(secondNumber)} =`
+        firstNumber = '';
+        updateCurrentDisplay();
+    }
+});
