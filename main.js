@@ -47,3 +47,16 @@ function getDisplayNumber(number) {
     }
     
 }
+
+
+for (const numberButton of numberButtons) {
+    numberButton.addEventListener('click', () => {
+        const value = numberButton.textContent;
+        currentNumber = currentNumber.toString();
+        if (value === '.' && currentNumber.includes('.')) {
+            return currentNumber;
+        }
+            currentNumber += value;
+            updateCurrentDisplay();
+    });
+}
