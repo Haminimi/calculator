@@ -1,3 +1,42 @@
+/* 
+CSS Reset 
+Author: Joshua Comeau
+Source: https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+ 
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+ 
+#root, #__next {
+    isolation: isolate;
+}
+
+
+/* Styles */
+
 html {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
@@ -123,7 +162,7 @@ body {
 }
 
 
-/* MEDIA QUERIES */
+/* Media Queries */
 
 /* Large Screens */
 @media screen and (min-width: 1430px) {
