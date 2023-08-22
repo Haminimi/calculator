@@ -60,3 +60,50 @@ for (const numberButton of numberButtons) {
             updateCurrentDisplay();
     });
 }
+
+
+function determineOperator(operationButton) {
+    if (operationButton === exponentiateButton) {
+        operator = '^';
+    } else if (operationButton === divideButton) {
+        operator = '÷';
+    } else if (operationButton === multiplyButton) {
+        operator = '×';
+    } else if (operationButton === subtractButton) {
+        operator = '-';
+    } else if (operationButton === addButton) {
+        operator = '+';
+    }
+    return operator;
+}
+
+for(const operationButton of operationButtons) {
+    operationButton.addEventListener('click', () => {
+        if(currentNumber !== '') {
+            if(firstNumber === '') {
+                firstNumber = currentNumber;
+                currentNumber = '';
+                operator = determineOperator(operationButton);
+                updatePreviousDisplay();
+                currentDisplay.textContent = '';
+            } else if (firstNumber !== '' && operator !== '') {
+                secondNumber = currentNumber;
+                firstNumber = operate();
+                currentNumber = '';
+                operator = determineOperator(operationButton);
+                updatePreviousDisplay();
+                updateCurrentDisplay();
+            } else if (firstNumber !== '' && operator !== '' && currentNumber === '') {
+                currentNumber = secondNumber;
+                firstNumber = operate();
+                operator = determineOperator(operationButton);
+                updatePreviousDisplay();
+                updateCurrentDisplay();
+            }
+
+        } else if (currentNumber === '' && operator !== '') {
+            operator = determineOperator(operationButton);
+            updatePreviousDisplay();
+        }
+    });
+}
