@@ -178,3 +178,43 @@ function operate() {
         }
     }
 }
+
+
+clearButton.addEventListener('click', () => {
+    currentDisplay.textContent = '';
+    previousDisplay.textContent = '';
+    currentNumber = '';
+    firstNumber = '';
+    operator= '';
+    secondNumber = '';
+})
+
+
+deleteButton.addEventListener('click', () => {
+    if (currentDisplay.textContent === '🤯') {
+        currentDisplay.textContent = '';
+    }
+
+    if (currentDisplay.textContent !== '') {
+        if(currentDisplay.textContent.includes(',')) {
+            currentNumber = currentNumber.toString().slice(0, -1);
+            currentDisplay.textContent = getDisplayNumber(currentNumber);
+        } else {currentDisplay.textContent = currentDisplay.textContent.slice(0, -1);
+        currentNumber = currentDisplay.textContent;
+        }
+    } 
+    
+    else {
+        return
+    }
+});
+
+
+signChangeButton.addEventListener('click', () => {
+    if (currentNumber === '') {
+        return;
+    } else if(currentNumber === currentNumber) {
+        currentNumber = -currentNumber;
+        updateCurrentDisplay()
+    }
+})
