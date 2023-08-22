@@ -130,3 +130,51 @@ resultButton.addEventListener('click', () => {
         updateCurrentDisplay();
     }
 });
+
+
+function exponentiate(a, b) {
+    return (a ** b);
+}
+
+function add(a, b) {
+    return (a * 10 + b * 10) / 10;
+}
+
+function subtract(a, b) {
+    return (a * 10 - b * 10) / 10;
+}
+
+function multiply(a, b) {
+    return (a * 10) * (b * 10) / 100;
+}
+
+function divide(a, b) {
+    return (a * 10) / (b * 10);
+}
+
+function infinityErrorMessage() {
+    currentDisplay.textContent = '🤯';
+    previousDisplay.textContent = '';
+    firstNumber = '';
+    operator = '';
+    secondNumber = '';
+    currentNumber = '';
+}
+
+function operate() {
+    if (operator === '^') {
+        return exponentiate(parseFloat(firstNumber), parseFloat(secondNumber))
+    } else if (operator === '+') {
+        return add(parseFloat(firstNumber), parseFloat(secondNumber))
+    } else if (operator === '-') {
+        return subtract(parseFloat(firstNumber), parseFloat(secondNumber))
+    } else if (operator === '×') {
+        return multiply(parseFloat(firstNumber), parseFloat(secondNumber))
+    } else if (operator === '÷') {
+        if (parseFloat(secondNumber) === 0) {
+            infinityErrorMessage();
+        } else {
+            return divide(parseFloat(firstNumber), parseFloat(secondNumber))
+        }
+    }
+}
