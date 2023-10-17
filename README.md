@@ -26,6 +26,7 @@ This project is the final project of the foundations section in [The Odin Projec
 - The [CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/) used in the project is created by [Joshua Comeau](https://www.joshwcomeau.com/).
 ## Author
 - [GitHub](https://github.com/Haminimi)
-- Email: haminimi.dev@gmail.com
+- [Exercism](https://exercism.org/profiles/Haminimi)
 - [LeetCode](https://leetcode.com/Haminimi/)
+- Email: haminimi.dev@gmail.com
 - LinkedIn: A profile will be available at the time I am job ready
