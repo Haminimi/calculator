@@ -1,8 +1,9 @@
 # Calculator
+![Screenshot of the Calculator app.](/screenshot.png)
 ## Description
 This browser calculator project is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s [curriculum](https://www.theodinproject.com/lessons/foundations-calculator). The Odin Project provides a high quality web development education maintained by an open source community.
-## Live Demo
-[The Calculator](https://haminimi.github.io/calculator/) web app built by [Haminimi](https://github.com/Haminimi).
+## Live Preview
+[The Calculator](https://haminimi.github.io/calculator/) app.
 ## Main Features
 - **Basic Mathematical Operations**
 - **Auxiliary Buttons:** Sign Change, All Clear and Delete Button.
@@ -19,6 +20,10 @@ This browser calculator project is a part of [The Odin Project](https://www.theo
 - HTML
 - Vanilla JavaScript
 - CSS
+
+**Tools:**
+- VS Code
+- Git
 ## Reflection
 This project is the final project of the foundations section in [The Odin Project](https://www.theodinproject.com/dashboard)'s [curriculum](https://www.theodinproject.com/lessons/foundations-calculator). Throughout this foundational phase we've covered the basics of web development and I've gained a strong grasp of the fundamental concepts. There is plenty more to explore and learn, but I'm able to create quite a bit at this point. I'm pretty comfortable working and building with HTML, Vanilla JavaScript and CSS and I'm looking forward to learning more, delving deeper into the more advanced topics and building more intricate and bigger projects.
 ## Credits
@@ -29,4 +34,4 @@ This project is the final project of the foundations section in [The Odin Projec
 - [Exercism](https://exercism.org/profiles/Haminimi)
 - [LeetCode](https://leetcode.com/Haminimi/)
 - Email: haminimi.dev@gmail.com
-- LinkedIn: A profile will be available at the time I am job ready
+## Happy coding!
