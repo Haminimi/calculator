@@ -2,8 +2,7 @@
 ![Screenshot of the Calculator app.](/screenshot.png)
 ## Description
 This browser calculator project is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s [curriculum](https://www.theodinproject.com/lessons/foundations-calculator). The Odin Project provides a high quality web development education maintained by an open source community.
-## Live Preview
-[The Calculator](https://haminimi.github.io/calculator/) app.
+## [Live Preview](https://haminimi.github.io/calculator/)
 ## Main Features
 - **Basic Mathematical Operations**
 - **Auxiliary Buttons:** Sign Change, All Clear and Delete Button.
@@ -29,9 +28,4 @@ This project is the final project of the foundations section in [The Odin Projec
 ## Credits
 - The function getDisplayNumber is implemented following this [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)'s [tutorial](https://www.youtube.com/watch?v=j59qQ7YWLxw). The getDisplayNumber function takes a numeric value as its argument and returns a formatted string that represents the number in a user-friendly display format with proper thousand separators contributing to an improved user experience and more understandable numerical representation.
 - The [CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/) used in the project is created by [Joshua Comeau](https://www.joshwcomeau.com/).
-## Author
-- [GitHub](https://github.com/Haminimi)
-- [Exercism](https://exercism.org/profiles/Haminimi)
-- [LeetCode](https://leetcode.com/Haminimi/)
-- Email: haminimi.dev@gmail.com
 ## Happy coding!
